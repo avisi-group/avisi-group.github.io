@@ -1,0 +1,18 @@
+{{ define "main" }}
+
+<section class="mb-5">
+    <p class="title">{{ .Title }}</p>
+    <article class="content">{{.Content}}</article>
+
+    {{ range .Pages.GroupByParam "roleType" }}
+    <p class="title is-4">{{.Key}}</p>
+
+    {{ range sort .Pages "Params.prio" }}
+    <article class="mb-5">
+        {{ partial "person.html" . }}
+    </article>
+    {{ end }}
+    {{ end }}
+</section>
+
+{{ end }}

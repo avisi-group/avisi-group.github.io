@@ -1,0 +1,15 @@
+{{ define "main" }}
+
+<section class="mb-5">
+    <p class="title">{{.Title}}</p>
+
+    <article class="content">{{.Content}}</article>
+
+    {{ range .Paginator.Pages }}
+    <article class="mb-5">
+        {{ .Render "project" }}
+    </article>
+    {{ end }}
+</section>
+
+{{ end }}

@@ -1,0 +1,17 @@
+<div class="card">
+    <div class="card-content">
+        <div class="media">
+            <div class="media-content">
+                <p class="title is-4"><a href="{{ .Permalink }}">{{ .Params.title }}</a></p>
+                <p class="subtitle is-6">{{ .Params.venue }}</p>
+                <p class="content">{{ .Summary }}</p>
+                <p class="is-size-7">
+                    <span class="mr-2"><strong>{{ .Params.date.Format "Jan 2 2006" }}</strong></span>
+                    {{ range .Params.author }}
+                    <span class="mr-2">{{.}}</span>
+                    {{ end }}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

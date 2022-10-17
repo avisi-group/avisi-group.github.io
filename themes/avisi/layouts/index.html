@@ -1,0 +1,22 @@
+{{ define "main" }}
+<section>
+    <p class="title is-2">The AVISI Group</p>
+    <p class="subtitle">Welcome to the <strong>AVISI</strong> group website.</p>
+
+    <hr>
+
+    <article class="content">
+        {{ .Content }}
+    </article>
+</section>
+<hr>
+<section>
+    <p class="title">Recent Publications</p>
+
+    {{ range first 3 (.GetPage "publications").Pages.ByDate.Reverse }}
+    <article class="mb-5">
+        {{ partial "publication.html" . }}
+    </article>
+    {{ end }}
+</section>
+{{ end }}
