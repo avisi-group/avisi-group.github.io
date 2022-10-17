@@ -1,8 +1,10 @@
 ---
 name: "Ferdia McKeogh"
-email: "fm@st-andrews.ac.uk"
+email: "fm208@st-andrews.ac.uk"
+link: "https://fmckeogh.github.io/"
 role: "PhD Student"
+roleType: "PhD Students"
 prio: 2
 ---
 
-Hello
+TODO: Blurb

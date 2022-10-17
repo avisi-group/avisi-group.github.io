@@ -1,7 +1,6 @@
 {{ define "main" }}
 <section>
-    <p class="title">The AVISI Group</p>
-
+    <p class="title is-2">The AVISI Group</p>
     <p class="subtitle">Welcome to the <strong>AVISI</strong> group website.</p>
 
     <hr>
@@ -10,9 +9,14 @@
         {{ .Content }}
     </article>
 </section>
-
-<section class="mt-6">
+<hr>
+<section>
     <p class="title">Recent Publications</p>
-    <p>(todo)</p>
+
+    {{ range first 3 (.GetPage "publications").Pages.ByDate.Reverse }}
+    <article class="mb-5">
+        {{ partial "publication.html" . }}
+    </article>
+    {{ end }}
 </section>
 {{ end }}

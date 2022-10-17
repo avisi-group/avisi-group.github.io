@@ -2,6 +2,8 @@
 name: "Tom Spink"
 email: "tcs6@st-andrews.ac.uk"
 role: "Research Group Leader"
+link: "https://tom-spink.com"
+roleType: "Faculty"
 prio: 1
 ---
 

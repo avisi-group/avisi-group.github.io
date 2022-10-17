@@ -6,3 +6,5 @@ We're interested in:
 * Operating Systems
 * Just-in-time Compilation
 * Dynamic Binary Translation
+
+We love collaborating with other institutes - academic, or industrial!  If you're interested in working with us, please [get in touch](/contact).

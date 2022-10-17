@@ -4,10 +4,14 @@
     <p class="title">{{ .Title }}</p>
     <article class="content">{{.Content}}</article>
 
-    {{ range sort .Paginator.Pages "Params.prio" }}
+    {{ range .Pages.GroupByParam "roleType" }}
+    <p class="title is-4">{{.Key}}</p>
+
+    {{ range sort .Pages "Params.prio" }}
     <article class="mb-5">
-        {{ .Render "person" }}
+        {{ partial "person.html" . }}
     </article>
+    {{ end }}
     {{ end }}
 </section>
 
