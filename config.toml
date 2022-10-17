@@ -1,0 +1,4 @@
+baseURL = 'https://avisi.org.uk'
+languageCode = 'en-gb'
+title = 'AVISI: Architecture Virtualisation and Simulation Group'
+theme = "ananke"
