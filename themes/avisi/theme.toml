@@ -1,0 +1,11 @@
+name = "AVISI Group Theme"
+license = "MIT"
+description = "The custom AVISI theme"
+homepage = "https://avisi-group.org.uk"
+tags = ["website"]
+features = ["posts", "shortcodes", "related content", "publications"]
+min_version = "0.84.0"
+
+[author]
+  name = "Tom Spink"
+  homepage = "https://avisi-group.org.uk"

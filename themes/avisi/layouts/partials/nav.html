@@ -1,0 +1,24 @@
+<nav class="navbar is-info" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+            {{ .Site.Params.ShortTitle }}
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="siteNavBar">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="siteNavBar" class="navbar-menu">
+        <div class="navbar-start">
+            {{ $currentPage := .Page }}
+            {{ range .Site.Menus.main }}
+            <a class="navbar-item {{ if $currentPage.IsMenuCurrent "main" . }}is-active{{ end }}" href="{{ .URL }}">
+                {{ .Name }}
+            </a>
+            {{ end }}
+        </div>
+    </div>
+</nav>

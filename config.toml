@@ -1,4 +1,39 @@
 baseURL = 'https://avisi.org.uk'
 languageCode = 'en-gb'
 title = 'AVISI: Architecture Virtualisation and Simulation Group'
-theme = "ananke"
+theme = 'avisi'
+buildFuture = true
+
+[params]
+shortTitle = 'AVISI'
+
+[menu]
+[[menu.main]]
+identifier = 'home'
+name = 'Home'
+pageref = '/'
+weight = 1
+
+[[menu.main]]
+identifier = 'people'
+name = 'People'
+pageref = '/people/'
+weight = 2
+
+[[menu.main]]
+identifier = 'projects'
+name = 'Projects'
+pageref = '/projects/'
+weight = 3
+
+[[menu.main]]
+identifier = 'publications'
+name = 'Publications'
+pageref = '/publications/'
+weight = 4
+
+[[menu.main]]
+identifier = 'contact'
+name = 'Contact'
+pageref = '/contact'
+weight = 5

@@ -1,0 +1,14 @@
+{{ define "main" }}
+
+<section class="mb-5">
+    <p class="title">{{ .Title }}</p>
+    <article class="content">{{.Content}}</article>
+
+    {{ range sort .Paginator.Pages "Params.prio" }}
+    <article class="mb-5">
+        {{ .Render "person" }}
+    </article>
+    {{ end }}
+</section>
+
+{{ end }}
