@@ -2,8 +2,14 @@
     <div class="card-content">
         <div class="media">
             <div class="media-left">
-                <figure class="image is-48x48">
-                    <img src="https://bulma.io/images/placeholders/48x48.png" alt="Placeholder image">
+                <figure class="image is-96x96">
+                    {{ if .Params.avatar }}
+                        {{ $imagePath := printf "/avatars/%s" .Params.avatar }}
+                        {{ $image := resources.Get $imagePath }}
+                        <img src="{{ $image.RelPermalink }}" alt="{{ .Params.name }}">
+                    {{ else }}
+                        <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                    {{ end }}
                 </figure>
             </div>
 

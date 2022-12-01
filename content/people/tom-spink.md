@@ -5,6 +5,7 @@ role: "Research Group Leader"
 link: "https://tom-spink.com"
 roleType: "Faculty"
 prio: 1
+avatar: "tom-spink.png"
 ---
 
 Tom is a Lecturer in Computer Science at the University of St Andrews.
