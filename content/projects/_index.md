@@ -2,4 +2,4 @@
 title: Projects
 ---
 
-Coming soon!
+Here are some projects that we're working on in the group.
