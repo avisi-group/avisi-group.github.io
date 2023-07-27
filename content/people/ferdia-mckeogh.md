@@ -8,4 +8,4 @@ avatar: "ferdia-mckeogh.jpg"
 prio: 2
 ---
 
-TODO: Blurb
+Ferdia is a PhD student at the University of St Andrews working on generating efficient simulation tools from formal ISA descriptions.
