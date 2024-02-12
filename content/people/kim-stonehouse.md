@@ -8,4 +8,4 @@ avatar: "kim-stonehouse.jpg"
 prio: 2
 ---
 
-TODO: Blurb
+Kim is a PhD student at the University of Edinburgh, who's interests lie in hardware acceleration for JIT compilation.
