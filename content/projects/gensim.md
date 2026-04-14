@@ -2,6 +2,6 @@
 title: "GenSim"
 ---
 
-The GenSim project started at the University of Edinburgh in 2013, and has..
+The GenSim project started at the University of Edinburgh in 2013, to develop a framework for high-speed simulator generation.
 
-Visit https://gensim.org for more details.
+Visit https://github.com/gensim-project for more details.
